@@ -14,7 +14,7 @@ class Blog(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(120), unique=True)
     body = db.Column(db.String(800))
-    #tasks = db.relationship('Task', backref='owner')
+
 
     def __init__(self, title, body):
         self.title = title 
