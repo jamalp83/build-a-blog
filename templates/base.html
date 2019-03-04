@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>{{title}}</title>
+        
+        <style>
+            .top_links a {
+                padding: 1em;
+                font-size: 20px;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>   
+    </head>
+<body>
+        {% if posts|length > 2 %}
+        {% endif %}
+
+        <nav class=top_links>
+            <a href="/blog" id="Build A Blog">Main Blog Page</a>
+            <a href="/newpost">Add a Blog Entry</a>
+        </nav>
+
+    
+    
+    
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
